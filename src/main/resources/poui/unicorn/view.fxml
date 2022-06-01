@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: ffd4fe;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poui.unicorn.Controller">
+    <children>
+        <AnchorPane prefHeight="85.0" prefWidth="800.0" style="-fx-background-color: ffa1fc;">
+            <children>
+                <ImageView fitHeight="86.0" fitWidth="93.0" layoutX="30.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@unicorn.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="144.0" layoutY="14.0" prefHeight="56.0" prefWidth="173.0" text="UniCorn" textFill="#862483">
+                    <font>
+                        <Font name="Constantia Bold Italic" size="40.0" />
+                    </font>
+                </Label>
+                <Label layoutX="536.0" layoutY="5.0" prefHeight="42.0" prefWidth="207.0" text="Добро пожаловать в" textFill="#ffebfc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="459.0" layoutY="29.0" prefHeight="42.0" prefWidth="330.0" text="обработчик изображений на Java" textFill="#ffebfc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <Button fx:id="chooserButton" layoutX="520.0" layoutY="130.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Выбрать картинку" textFill="#b22bbc">
+            <font>
+                <Font name="Constantia Italic" size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="saverButton" layoutX="520.0" layoutY="610.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Сохранить" textFill="#b22bbc">
+            <font>
+                <Font name="Constantia Italic" size="21.0" />
+            </font>
+        </Button>
+        <AnchorPane layoutX="20.0" layoutY="400.0" prefHeight="270.0" prefWidth="440.0">
+            <children>
+                <ImageView fx:id="afterImagеForm" fitHeight="270.0" fitWidth="440.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="520.0" layoutY="220.0" prefHeight="340.0" prefWidth="240.0" style="-fx-border-color: ffebfc; -fx-border-width: 3; -fx-border-radius: 5;">
+            <children>
+                <Button fx:id="blur" layoutX="40.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Размытие" textFill="#b22bbc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="blackAndWhite" layoutX="40.0" layoutY="90.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Чёрно-белый" textFill="#b22bbc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="negative" layoutX="40.0" layoutY="150.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Негатив" textFill="#b22bbc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="contours" layoutX="40.0" layoutY="210.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Контуры" textFill="#b22bbc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="emboss" layoutX="40.0" layoutY="270.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="160.0" style="-fx-background-color: ffa1fc; -fx-background-radius: 5;" text="Рельеф" textFill="#b22bbc">
+                    <font>
+                        <Font name="Constantia Italic" size="21.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="20.0" layoutY="110.0" prefHeight="270.0" prefWidth="440.0">
+            <children>
+                <ImageView fx:id="beforeImagеForm" fitHeight="270.0" fitWidth="440.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
